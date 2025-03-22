@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        console.log("hello world")
+
+        let name = "john"
+        let surname = "Doe"
+        console.log(name)
+        console.log(surname)
+
+        let age = 11;
+        console.log(age)
+
+        age = 54;
+        console.log(age);
+
+        const pie = 3.14;
+        // pie = 10;
+
+        console.log(pie);
+
+        console.log((3+2) - 76 * (1+1));
+
+        const max = 57;
+        const actual = max-13;
+        const percentage = actual/max;
+        console.log(percentage);
+
+        let x = 1;
+        x = -x;
+        console.log(x);
+
+        let d = 1, e = 3;
+        console.log(e-d);
+
+        console.log(5%2);
+        console.log(8%3);
+        console.log(8%4);
+        console.log(2**2);
+        console.log(4**(1/2)); //square root
+        let s = "my"+"string";
+        console.log(s)
+
+        console.log(2+2+"1")
+        console.log("1"+2+2) //important concept. as first part is string, all others are considered as strings
+        console.log(6 - '2') //4 converts 6 to 4
+        console.log('6'/'2') //this shows only + works as concatenate
+
+        console.log(+x); //no effect on numbers
+
+        let y = -2;
+        console.log(+y);
+
+        console.log(+true); //1
+        console.log(+"") //0
+        //this converts non numbers
+
+        let apples ='2';
+        let oranges ='3';
+        console.log(+apples + +oranges); //both strings converted to numbers and added
+
+        //precedence
+        let a =1;
+        let b = 2;
+
+        let c = 3 - (a=b +1); //bad practice of writing javascript code
+        console.log(a);
+        console.log(c);
+
+        //writing shorter code
+        let n = 2;
+        n = n +5;
+        n= n*2;
+        console.log(n);
+
+        n = 2;
+
+        n +=5;
+        n *=2;
+        console.log(n);
+
+        n = 2;
+        n *= 3 + 5;
+        console.log(n);
+
+        let counter = 2;
+        counter++;
+        console.log(counter);
+
+        counter--;
+        console.log(counter);
+
+        let count = 1;
+        let f = ++count;
+        console.log(f) //2
+
+        let coun = 1;
+        let g = coun++;
+        console.log(g); //returns old value
+        </script>
+</body>
+</html>
