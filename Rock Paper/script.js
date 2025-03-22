@@ -12,7 +12,6 @@ let getComputerChoice =()=>{
     }
 }
 
-// console.log(getComputerChoice());
 
 let getHumanChoice = (num) =>{
     num = Number(num);
@@ -28,12 +27,6 @@ let getHumanChoice = (num) =>{
 }
 
 
-
-
-
-
-
-// console.log(getHumanChoice(number));
 
 let humanScore = 0;
 let computerScore = 0;
