@@ -12,7 +12,7 @@ let getComputerChoice =()=>{
     }
 }
 
-console.log(getComputerChoice());
+// console.log(getComputerChoice());
 
 let getHumanChoice = (num) =>{
     num = Number(num);
@@ -30,10 +30,10 @@ let getHumanChoice = (num) =>{
 let number = prompt('choose 0 for Rock, 1 for Paper, 2 for Scissor');
 
 
-// let a = Math.floor(Math.random()*3);
 
 
-console.log(getHumanChoice(number));
+
+// console.log(getHumanChoice(number));
 
 let humanScore = 0;
 let computerScore = 0;
