@@ -27,7 +27,7 @@ let getHumanChoice = (num) =>{
 
 }
 
-let number = prompt('choose 0 for Rock, 1 for Paper, 2 for Scissor');
+
 
 
 
@@ -65,4 +65,35 @@ let playRound = (ComputerChoice , HumanChoice)=>{
 
 }
 
-playRound(getComputerChoice(),getHumanChoice(number));
+
+
+let playGame = ()=>{
+    for(let round =1; round <=5; round++){
+        let number = prompt('choose 0 for Rock, 1 for Paper, 2 for Scissor');
+        let HumanChoice = getHumanChoice(number);
+
+        let ComputerChoice = getComputerChoice();
+
+        console.log("computer's Choice: ", ComputerChoice);
+        console.log("your Choice ", HumanChoice);
+
+        playRound(getComputerChoice(),getHumanChoice(number));
+
+
+    }
+
+    console.log("-----final Scores-----");
+    console.log("Computer Score: ", computerScore);
+    console.log("Your Score", humanScore);
+
+    if(computerScore<humanScore){
+        console.log('You won the game');
+    }else if(computerScore>humanScore){
+        console.log('You Lost the game');
+    }else{
+        console.log('Game is Tied');
+    }
+}
+
+
+playGame();
